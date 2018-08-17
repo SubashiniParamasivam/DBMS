@@ -1,0 +1,161 @@
+<html>
+<head>
+<style>
+body
+{
+background-image:url("bbbg.jpg");
+background-size:cover;
+background-repeat: no-repeat;
+background-attachment: fixed;
+}
+label{
+	display:inline-block;
+	width:300px;
+	margin-bottom:10px;
+	text-align:left;
+	font-size:20px;
+}
+.Addr{
+	display:inline-block;
+	width:300px;
+	margin-left:200px;
+	text-align:left;
+	font-size:20px;
+}
+
+.optional{
+	display:inline-block;
+	width:300px;
+	margin-bottom:10px;
+	text-align:right;
+	font-size:20px;
+}
+
+input[type=text],[type=date]{
+	width:40%;
+	height:35px;
+	border-style:solid;
+	border-radius:5px;
+	border-width:1px;
+}
+input[type=radio],[type=checkbox]{
+	width:20%;
+	height:15px;
+	border-style:solid;
+	border-radius:5px;
+	border-width:1px;
+	border-color:black;
+}
+select{
+	width:40%;
+	height:35px;
+	border-style:solid;
+	border-radius:5px;
+	border-width:1px;
+	border-color:black;
+}
+button
+{
+	display:inline-block;
+	color:white;
+	border-radius: 15px;
+	background-color:green;
+	padding:12px 28px;
+	font-size:18px;
+}
+</style>
+</head>
+<title>nvspform6</title>
+<body>
+<form action="Apply.php" method="POST">
+<div align="center">
+<img src="logo_nvsp.jpg" alt="" width="170"><img src="NVSP_header.jpg" alt="" width="595">
+<h3>APPLICATION FORM</h3>
+Note: Fields marked with asterik(*) are mandatory<br><br>
+<label>State:</label><select name="s1" value="Select state">
+<option value="SS">Select state</option>
+<option value="TN">TamilNadu</option>
+<option value="KL">Kerala</option>
+<option value="KA">Karnataka</option>
+<option value="AP">AndhraPradesh</option>
+</select></br></br>
+<label>Parliamentary constituency:</label><select name="s2">
+<option value="SS">Select PC</option>
+<option value="TN">TamilNadu</option>
+<option value="KL">Kerala</option>
+<option value="KA">Karnataka</option>
+<option value="AP">AndhraPradesh</option>
+</select></br></br>
+<label><input type="radio" name="reason" value="" checked>As a first time voter<br><br></label>
+<label><p>or<br><br></p></label>
+<label><input type="radio" name="reason" value="">due to shifting from another constituency</label>
+<br><br>
+<label>Name:</label><input type="text" name="t1" required><br><br>
+<label>Surname:</label><input type="text" name="t2"><br><br>
+<label>Name of Relative of Applicant:</label><input type="text" name="t3" required><br><br>
+<label>Surname of Relative of Applicant:</label><input type="text" name="t4"><br><br>
+<label>Type of Relation:</label><select name="s3">
+<option value="Father">Father<br></option>
+<option value="Mother">Mother<br></option>
+<option value="Husband">Husband<br></option>
+<option value="Wife">Wife<br></option>
+<option value="Other">Other</option>
+</select></br></br>
+<label>Age:</label><input type="text" name="t5" required><br><br>
+<label>DOB:</label><input type="date" name="t6" required><br><br>
+<label>Gender of Applicant:</label><select name="s4">
+<option value="Male">Male<br></option>
+<option value="Female">Female<br></option>
+<option value="Third Gender">Third Gender<br></option>
+</select></br></br></div>
+<b><label class="Addr">Current Address:</label></b><br>
+<div align="center"><label>House No:</label><input type="text" name="t7" required><br><br>
+<label>Street/Area/Locality:</label><input type="text" name="t8" required><br><br>
+<label>Town/Village:</label><input type="text" name="t9" required><br><br>
+<label>Post Office:</label><input type="text" name="t10" required><br><br>
+<label>Pin code:</label><input type="text" name="t11" required><br><br>
+<label>State/UT:</label><select name="State" value="Select state">
+<option value="TN">TamilNadu</option>
+<option value="KL">Kerala</option>
+<option value="KA">Karnataka</option>
+<option value="AP">AndhraPradesh</option>
+</select></br></br>
+<label>District:</label><select name="s5" value="Select District">
+<option value="Thoothukudi">Thoothukudi</option>
+<option value="Ariyalur">Ariyalur</option>
+<option value="Dharmapuri">Dharmapuri</option>
+<option value="Tiruppur">Tiruppur</option>
+</select></br></br></div>
+<b><label class="Addr">Permanent Address:</label></b><br>
+<div align="center">
+<label>House No:</label><input type="text" name="t7" required><br><br>
+<label>Street/Area/Locality:</label><input type="text" name="t8" required><br><br>
+<label>Town/Village:</label><input type="text" name="t9" required><br><br>
+<label>Post Office:</label><input type="text" name="t10" required><br><br>
+<label>Pin code:</label><input type="text" name="t11" required><br><br>
+<label>State/UT:</label><select name="State" value="Select state">
+<option value="TN">TamilNadu</option>
+<option value="KL">Kerala</option>
+<option value="KA">Karnataka</option>
+<option value="AP">AndhraPradesh</option>
+</select></br></br>
+<label>District:</label><select name="District" value="Select District">
+<option value="TN">Thoothukudi</option>
+<option value="AR">Ariyalur</option>
+<option value="TP">Dharmapuri</option>
+<option value="TR">Tiruppur</option>
+</select></br></br>
+<label>EPIC NO:</label><input type="text" name="t12"><br><br>
+<label>Optional Particulars:</label><br>
+<label><input type="checkbox">Visual impairment</label><br>
+<label><input type="checkbox">Visual impairment/Speech & Hearing Disability</label><br>
+<label><input type="checkbox">Locomotor Disability</label><br>
+<label>Other:</label><input type="text" name="t13"><br><br>
+<label>Mobile No:</label><input type="text" name="t14" required><br><br>
+<label>Email-id:</label><input type="text" name="t15" required><br><br>
+<button type="reset" name="b1">Reset</button>
+<button type="Submit" name="b2">Submit</button>
+</div>
+</form>
+</body>
+</html>
